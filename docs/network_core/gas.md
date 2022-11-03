@@ -21,12 +21,12 @@ GET: /gas/network_base_fee
 #### Request Parameters
 | **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
 | ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
-| start_date   | STRING   | Start hour of the selected period (Optional). | 2022-07-01T00:00:00Z  | The first hour (0 AM) of  the most recent date that the API includes. |
-| end_date     | STRING   | End hour of the selected period (Optional).   | 2022-07-01T00:00:00Z  | The first hour (0 AM) of  the most recent date that the API includes. |
+| start_hour   | STRING   | Start hour of the selected period (Optional). | 2022-07-01T00:00:00Z  | The first hour (0 AM) of  the most recent date that the API includes. |
+| end_hour     | STRING   | End hour of the selected period (Optional).   | 2022-07-01T00:00:00Z  | The first hour (0 AM) of  the most recent date that the API includes. |
 
 :::note
 
- The difference between end_date and start_date should be smaller than 31 days.
+ The difference between end_hour and start_hour should be smaller than 31 days.
 
 :::
 
