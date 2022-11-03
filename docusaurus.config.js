@@ -16,7 +16,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'StarBoard', // Usually your GitHub org/user name.
+  organizationName: 'Spacescope', // Usually your GitHub org/user name.
   projectName: 'Spacescope Document', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -60,7 +60,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/starboard-ventures/spacescope-document/tree/main',
+            'https://github.com/Spacescope/docs/tree/main',
         },
         // blog: {
         //   showReadingTime: true,
@@ -101,12 +101,12 @@ const config = {
             label: 'API Documentation',
           },
           {
-            href: 'https://github.com/starboard-ventures/spacescope-document/tree/main',
+            href: 'https://github.com/Spacescope/docs/tree/main',
             className: "sign-in-link",
             position: 'right',
           },
           {
-            href: 'https://github.com/starboard-ventures/spacescope-document/tree/main',
+            href: 'https://github.com/Spacescope/docs/tree/main',
             className: "header-github-link",
             "title": "GitHub",
             position: 'right',
