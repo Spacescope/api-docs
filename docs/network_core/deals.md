@@ -26,7 +26,7 @@ GET: /v2/deals/deal_count
 
 :::note
 
- The difference between end_date and start_date should be smaller than 31 days.
+ The difference between end_date and start_date should be smaller than 90 days.
 
 :::
 
@@ -212,7 +212,7 @@ GET: /deals/deal_size
 
 :::note
 
- The difference between end_date and start_date should be smaller than 31 days.
+ The difference between end_date and start_date should be smaller than 90 days.
 
 :::
 

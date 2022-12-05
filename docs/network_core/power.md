@@ -27,7 +27,7 @@ GET: /power/network_storage_capacity
 
 :::note
 
- The difference between end_date and start_date should be smaller than 31 days.
+ The difference between end_date and start_date should be smaller than 90 days.
 
 :::
 
@@ -196,7 +196,7 @@ GET: /power/storage_state
 
 :::note
 
- The difference between end_date and start_date should be smaller than 31 days.
+ The difference between end_date and start_date should be smaller than 90 days.
 
 :::
 
@@ -374,7 +374,7 @@ GET: /power/daily_power_onboarding_by_method
 
 :::note
 
- The difference between end_date and start_date should be smaller than 31 days.
+ The difference between end_date and start_date should be smaller than 90 days.
 
 :::
 
@@ -541,7 +541,7 @@ GET: /power/daily_power_onboarding_by_sector_size
 
 :::note
 
- The difference between end_date and start_date should be smaller than 31 days.
+ The difference between end_date and start_date should be smaller than 90 days.
 
 :::
 

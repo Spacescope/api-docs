@@ -26,7 +26,7 @@ GET: /circulating_supply/circulating_supply
 
 :::note
 
- The difference between end_date and start_date should be smaller than 31 days.
+ The difference between end_date and start_date should be smaller than 90 days.
 
 :::
 
@@ -200,7 +200,7 @@ GET: /circulating_supply/network_locked_fil_breakdown
 
 :::note
 
- The difference between end_date and start_date should be smaller than 31 days.
+ The difference between end_date and start_date should be smaller than 90 days.
 
 :::
 
