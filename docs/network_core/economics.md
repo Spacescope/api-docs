@@ -26,7 +26,7 @@ GET: /economics/block_reward
 
 :::note
 
- The difference between end_date and start_date should be smaller than 31 days.
+ The difference between end_date and start_date should be smaller than 90 days.
 
 :::
 
@@ -187,7 +187,7 @@ GET: /economics/sector_economics
 
 :::note
 
- The difference between end_date and start_date should be smaller than 31 days.
+ The difference between end_date and start_date should be smaller than 90 days.
 
 :::
 

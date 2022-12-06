@@ -187,7 +187,7 @@ GET: /gas/network_fee_per_message
 
 :::note
 
- The difference between end_date and start_date should be smaller than 31 days.
+ The difference between end_date and start_date should be smaller than 90 days.
 
 :::
 
@@ -365,7 +365,7 @@ GET: /gas/daily_network_fee_breakdown
 
 :::note
 
- The difference between end_date and start_date should be smaller than 31 days.
+ The difference between end_date and start_date should be smaller than 90 days.
 
 :::
 
@@ -535,7 +535,7 @@ GET: /gas/daily_gas_usage_in_units
 
 :::note
 
- The difference between end_date and start_date should be smaller than 31 days.
+ The difference between end_date and start_date should be smaller than 90 days.
 
 :::
 
