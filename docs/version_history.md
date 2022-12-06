@@ -5,7 +5,7 @@ sidebar_position: 3
 # Version History
 
 ## V2.2.0 on December 6, 2022
-- [/v2/deals/deal_snapshot](https://docs.spacescope.io/deals/deal_snapshot) now available.  
+- [/v2/deals/deal_snapshot](https://docs.spacescope.io/storage_deals/deal_status) now available.  
 - Change the limitation on time-window from 30 days to 90 days.
 
 ## V2.1.1 on October 31, 2022
