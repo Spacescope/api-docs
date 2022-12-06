@@ -13,16 +13,17 @@ GET: /deals/deal_snapshot
 
 #### Request Parameters
 (Please at least input 1 of 6 optional params: deal_id, piece_cid, client_id, client_address, provider_id, provider_address)
-| **Variable** | **Type** | **Description**                         | **Example** | **Default**                  |
-| ------------ | -------- | --------------------------------------- | ----------- | ---------------------------- |
+
+| **Variable** | **Type** | **Description**  | **Example** | **Default**                  |
+| ------------ | -------- | ---------------- | ----------- | ---------------------------- |
 | page_size     | BIGINT   | The number of items to be displayed on one page (Required).  | 10  | / |
 | page | BIGINT | The number of displayed page (Optional). | 5 | 0 |
 | deal_id | BIGINT | Selected deal_id (Optional). | 3408838 | Unique ID of the deal. |
-| piece_cid | STRING | Selected piece_cid (Optional). | baga6ea4seaqgbmifhs63cij4uup7v7ax3jysnkmnd5fesg3uwucv7hep2pikebq | CID of a sector piece. A Piece is an object that represents a whole or part of a File. |
+| piece_cid | STRING | Selected piece_cid (Optional). | baga6ea4seaqgbmifhs63 cij4uup7v7ax3jysnkmnd5fe sg3uwucv7hep2pikebq | CID of a sector piece. A Piece is an object that represents a whole or part of a File. |
 | client_id | STRING | Selected client_id (Optional). | f01020500 | Unique ID of the client. |
-| client_address | STRING | Selected address of the client (Optional). | f1xnypvbq2f5xbz5u4gzrgdmpz6kak4bmnfk7i2vq | Address of the client proposing the deal. |
+| client_address | STRING | Selected address of the client (Optional). | f1xnypvbq2f5xbz5u4gzr gdmpz6kak4bmnfk7i2vq | Address of the client proposing the deal. |
 | provider_id | STRING | Selected provider_id (Optional). | f01675012 | Unique ID of the storage provider. |
-| provider_address | STRING | Selected address of the provider (Optional). | f2che6a4udf6jofehho4qr5olzckfgdzexvpgj2pi | Address of the storage provider providing the services. |
+| provider_address | STRING | Selected address of the provider (Optional). | f2che6a4udf6jofehho4 qr5olzckfgdzexvpgj2pi | Address of the storage provider providing the services. |
 
 
 
