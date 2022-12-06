@@ -52,7 +52,7 @@ import TabItem from '@theme/TabItem';
 ```python
 import requests
 
-url = "https://api.spacescope.io/v2/deals/deal_snapshot?deal_id=3408838"
+url = "https://api.spacescope.io/v2/deals/deal_snapshot?deal_id=3408838&page_size=10"
 
 payload={}
 headers = {
@@ -77,7 +77,7 @@ import (
   "io/ioutil"
 )
 func main() {
-  url := "https://api.spacescope.io/v2/deals/deal_snapshot?deal_id=3408838"
+  url := "https://api.spacescope.io/v2/deals/deal_snapshot?deal_id=3408838&page_size=10"
   method := "GET"
   client := &http.Client {
   }
@@ -111,7 +111,7 @@ func main() {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://api.spacescope.io/v2/deals/deal_snapshot?deal_id=3408838',
+  'url': 'https://api.spacescope.io/v2/deals/deal_snapshot?deal_id=3408838&page_size=10',
   'headers': {
     'authorization': 'Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe'
   }
@@ -126,7 +126,7 @@ request(options, function (error, response) {
 <TabItem value="cURL">
 
 ```curl
-curl --location --request GET 'https://api.spacescope.io/v2/deals/deal_snapshot?deal_id=3408838' \
+curl --location --request GET 'https://api.spacescope.io/v2/deals/deal_snapshot?deal_id=3408838&page_size=10' \
 --header 'authorization: Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe'
 ```
 
