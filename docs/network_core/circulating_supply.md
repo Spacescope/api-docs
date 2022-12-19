@@ -322,6 +322,7 @@ curl --location --request GET 'https://api.spacescope.io/v2/circulating_supply/n
 | new_initial_pledge          | NUMERIC  | The number of new initial pledges to the Filecoin Network in the last 24 hours.       |
 | new_reward_locked           | NUMERIC  | The number of new rewards locked in the Filecoin Network in the last 24 hours.                        |
 | new_reward_released         | NUMERIC  | The new locked rewards less the increase in total locked funds in the last 24 hours.             |
+| sp_deal_collateral_change   | NUMERIC  | The change in deal collateral committed by storage providers in the last 24 hours. |
 
 #### Response Example
 
@@ -340,7 +341,8 @@ curl --location --request GET 'https://api.spacescope.io/v2/circulating_supply/n
            "total_locked_funds": 20338541.578073677,
            "new_initial_pledge": 104187.91617693826,
            "new_reward_locked": 217603.8203024527,
-           "new_reward_released": 227465.61821696066
+           "new_reward_released": 227465.61821696066,
+           "sp_deal_collateral_change": 5863.12853187416
        }
    ]
 }
