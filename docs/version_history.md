@@ -5,9 +5,11 @@ sidebar_position: 3
 # Version History
 
 ## V2.3.0 on December 19, 2022
-- [/network_user/client_count](https://docs.spacescope.io/network_core/network_user/client_count) now available.  
-- [/network_user/address_count](https://docs.spacescope.io/network_core/network_user/address_count) now available.  
-- [/circulating_supply/network_locked_fil_breakdown](https://docs.spacescope.io/network_core/circulating_supply/network_locked_fil_breakdown) now includes the change in deal collateral committed by storage providers.
+- [/network_user/client_count](https://docs.spacescope.io/network_core/network_user#client-count) now available.  
+- [/network_user/address_count](https://docs.spacescope.io/network_core/network_user#address-count) now available.
+- [/power/sectors_schedule_expiration](https://docs.spacescope.io/network_core/power#sectors-scheduled-expiration) now available.    
+- [/circulating_supply/network_locked_fil_breakdown](https://docs.spacescope.io/network_core/circulating_supply#locked-fil-breakdown) now includes the change in deal collateral committed by storage providers.
+
 
 ## V2.2.0 on December 6, 2022
 - [/v2/deals/deal_snapshot](https://docs.spacescope.io/storage_deals/deal_status) now available.  
