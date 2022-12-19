@@ -1,21 +1,21 @@
 ---
-sidebar_position: 8
+sidebar_position: 9
 ---
 
-# Circulating Supply
+# Network User
 
-Circulating supply provides information on the Filecoin Network’s protocol token circulating supply and its breakdown.
+Population information on the Filecoin Network’s various network users or participants.
 
-### FIL Protocol Circulating Supply
+### Client Count
 
 #### Description
 
-The total amount and the change of FIL tokens in circulation according to the Protocol’s definition.
+The number of clients on the Filecoin Network.
 
 #### Request URL
 
 ```js
-GET: /circulating_supply/circulating_supply
+GET: /network_user/client_count
 ```
 
 #### Request Parameters
@@ -29,6 +29,7 @@ GET: /circulating_supply/circulating_supply
  The difference between end_date and start_date should be smaller than 90 days.
 
 :::
+
 
 #### Request Examples
 
@@ -55,7 +56,7 @@ import TabItem from '@theme/TabItem';
 ```python
 import requests
 
-url = "https://api.spacescope.io/v2/circulating_supply/circulating_supply?end_date=2022-07-01&start_date=2022-07-01"
+url = "https://api.spacescope.io/v2/network_user/client_count?end_date=2022-07-01&start_date=2022-07-01"
 
 payload={}
 headers = {
@@ -80,7 +81,7 @@ import (
   "io/ioutil"
 )
 func main() {
-  url := "https://api.spacescope.io/v2/circulating_supply/circulating_supply?end_date=2022-07-01&start_date=2022-07-01"
+  url := "https://api.spacescope.io/v2/network_user/client_count?end_date=2022-07-01&start_date=2022-07-01"
   method := "GET"
   client := &http.Client {
   }
@@ -114,7 +115,7 @@ func main() {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://api.spacescope.io/v2/circulating_supply/circulating_supply?end_date=2022-07-01&start_date=2022-07-01',
+  'url': 'https://api.spacescope.io/v2/network_user/client_count?end_date=2022-07-01&start_date=2022-07-01',
   'headers': {
     'authorization': 'Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe'
   }
@@ -129,7 +130,7 @@ request(options, function (error, response) {
 <TabItem value="cURL">
 
 ```curl
-curl --location --request GET 'https://api.spacescope.io/v2/circulating_supply/circulating_supply?end_date=2022-07-01&start_date=2022-07-01' \
+curl --location --request GET 'https://api.spacescope.io/v2/network_user/client_count?end_date=2022-07-01&start_date=2022-07-01' \
 --header 'authorization: Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe'
 ```
 
@@ -144,13 +145,9 @@ curl --location --request GET 'https://api.spacescope.io/v2/circulating_supply/c
 
 | **Variable**                   | **Type** | **Description**                                                                                                                                    |
 | ------------------------------ | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| stat_date                      | DATE     | Refers to the date the data was recorded.                                                                                                         |
-| circulating_fil           | NUMERIC  | The amount of FIL circulating and tradeable in the economy.  |
-| mined_fil          | NUMERIC  | The amount of FIL that has been mined by storage miners.                                                                                        |
-| vested_fil             | NUMERIC  | Total amount of FIL that is vested from genesis allocation.                                                                                     |
-| reserve_disbursed_fil             | NUMERIC  | The amount of FIL that has been disbursed from the mining reserve.                                                                                     |
-| locked_fil             | NUMERIC  | The amount of FIL locked as part of initial pledge, deal pledge, locked rewards, and other locking mechanisms.                                                                                     |
-| burnt_fil             | NUMERIC  | The amount of FIL burned as part of on-chain computations and penalties.                                                                                     |
+| stat_date           | DATE  | Refers to the date the data was recorded.  |
+| total_client_count          | BIGINT  | Cumulative count of the clients that has had at least one deal.                                                                           |
+| total_verified_client_count             | STRING  | Cumulative count of the clients that has had at least one verified deal.  |
 
 #### Response Example
 
@@ -159,18 +156,14 @@ curl --location --request GET 'https://api.spacescope.io/v2/circulating_supply/c
 
 ```Json
 {
-   "request_id": "4e14a4aa-2368-4029-a660-5a883c0c29f1#666",
+   "request_id": "ba4422cc-734f-4d90-84ec-7ad0b3ef01e7#23703",
    "code": 0,
    "message": "success.",
    "data": [
        {
-           "stat_date": "2022-07-01T00:00:00Z",
-           "circulating_fil": 316590544.83518726,
-           "mined_fil": 198962164.329669,
-           "vested_fil": 267759227.86305127,
-           "reserve_disbursed_fil": 17066618.96177341,
-           "locked_fil": 136018723.96866196,
-           "burnt_fil": 31178742.350644458
+           "stat_date": "2022-12-13T00:00:00Z",
+           "total_client_count": 2196,
+           "total_verified_client_count": 1135
        }
    ]
 }
@@ -180,16 +173,16 @@ curl --location --request GET 'https://api.spacescope.io/v2/circulating_supply/c
 <hr />
 
 
-### Locked FIL Breakdown
+### Address Count
 
 #### Description
 
-The breakdown of FIL tokens locked on the Filecoin Network.
+The number of unique addresses that have interacted with the blockchain over time, classified by status and address balance.
 
 #### Request URL
 
 ```js
-GET: /circulating_supply/network_locked_fil_breakdown
+GET: /network_user/address_count
 ```
 
 #### Request Parameters
@@ -227,7 +220,7 @@ GET: /circulating_supply/network_locked_fil_breakdown
 ```python
 import requests
 
-url = "https://api.spacescope.io/v2/circulating_supply/network_locked_fil_breakdown?end_date=2022-07-01&start_date=2022-07-01"
+url = "https://api.spacescope.io/v2/network_user/address_count?end_date=2022-07-01&start_date=2022-07-01"
 
 payload={}
 headers = {
@@ -252,7 +245,7 @@ import (
   "io/ioutil"
 )
 func main() {
-  url := "https://api.spacescope.io/v2/circulating_supply/network_locked_fil_breakdown?end_date=2022-07-01&start_date=2022-07-01"
+  url := "https://api.spacescope.io/v2/network_user/address_count?end_date=2022-07-01&start_date=2022-07-01"
   method := "GET"
   client := &http.Client {
   }
@@ -286,7 +279,7 @@ func main() {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://api.spacescope.io/v2/circulating_supply/network_locked_fil_breakdown?end_date=2022-07-01&start_date=2022-07-01',
+  'url': 'https://api.spacescope.io/v2/network_user/address_count?end_date=2022-07-01&start_date=2022-07-01',
   'headers': {
     'authorization': 'Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe'
   }
@@ -301,7 +294,7 @@ request(options, function (error, response) {
 <TabItem value="cURL">
 
 ```curl
-curl --location --request GET 'https://api.spacescope.io/v2/circulating_supply/network_locked_fil_breakdown?end_date=2022-07-01&start_date=2022-07-01' \
+curl --location --request GET 'https://api.spacescope.io/v2/network_user/address_count?end_date=2022-07-01&start_date=2022-07-01' \
 --header 'authorization: Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe'
 ```
 
@@ -317,12 +310,14 @@ curl --location --request GET 'https://api.spacescope.io/v2/circulating_supply/n
 | **Variable**                | **Type** | **Description**                                        |
 | :-------------------------- | :------- | :----------------------------------------------------- |
 | stat_date                   | DATE     | Refers to the date the data was recorded. |
-| total_initial_pledge        | NUMERIC  | The total active initial pledge on the Filecoin Network.                       |
-| total_locked_funds          | NUMERIC  | The total active locked funds on the Filecoin Network.                         |
-| new_initial_pledge          | NUMERIC  | The number of new initial pledges to the Filecoin Network in the last 24 hours.       |
-| new_reward_locked           | NUMERIC  | The number of new rewards locked in the Filecoin Network in the last 24 hours.                        |
-| new_reward_released         | NUMERIC  | The new locked rewards less the increase in total locked funds in the last 24 hours.             |
-| sp_deal_collateral_change   | NUMERIC  | The change in deal collateral committed by storage providers in the last 24 hours. |
+| total_address_count        | BIGINT  | The number of unique addresses ever created on Filecoin.                       |
+| active_address_count_weekly          | BIGINT  | The number of unique addresses that has interacted with the Filecoin blockchain at least once in the past 7 days.                         |
+| active_address_count_monthly          | BIGINT  | The number of unique addresses that has interacted with the Filecoin blockchain at least once in the past 30 days.       |
+| total_address_count_100           | BIGINT  | The number of unique addresses on Filecoin with token balance >100 FIL.                        |
+| total_address_count_1000         | BIGINT  | The number of unique addresses on Filecoin with token balance >1000 FIL.             |
+| total_address_count_10000 | BIGINT | The number of unique addresses on Filecoin with token balance >10000 FIL. |
+| total_address_count_100000 | BIGINT | The number of unique addresses on Filecoin with token balance >100000 FIL. |
+| total_address_count_1000000 | BIGINT | The number of unique addresses on Filecoin with token balance >1000000 FIL. |
 
 #### Response Example
 
@@ -331,18 +326,20 @@ curl --location --request GET 'https://api.spacescope.io/v2/circulating_supply/n
 
 ```Json
 {
-   "request_id": "4e14a4aa-2368-4029-a660-5a883c0c29f1#666",
+   "request_id": "ba4422cc-734f-4d90-84ec-7ad0b3ef01e7#23701",
    "code": 0,
    "message": "success.",
    "data": [
        {
-           "stat_date": "2022-07-01T00:00:00Z",
-           "total_initial_pledge": 115655615.67550927,
-           "total_locked_funds": 20338541.578073677,
-           "new_initial_pledge": 104187.91617693826,
-           "new_reward_locked": 217603.8203024527,
-           "new_reward_released": 227465.61821696066,
-           "sp_deal_collateral_change": 5863.12853187416
+           "stat_date": "2022-12-01T00:00:00Z",
+           "total_address_count": 1981165,
+           "total_address_count_100": 58352,
+           "total_address_count_1000": 16556,
+           "total_address_count_10000": 4539,
+           "total_address_count_100000": 815,
+           "total_address_count_1000000": 52,
+           "active_address_count_weekly": 20952,
+           "active_address_count_monthly": 56088
        }
    ]
 }
