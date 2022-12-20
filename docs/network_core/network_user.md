@@ -147,7 +147,7 @@ curl --location --request GET 'https://api.spacescope.io/v2/network_user/client_
 | ------------------------------ | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | stat_date           | DATE  | Refers to the date the data was recorded.  |
 | total_client_count          | BIGINT  | Cumulative count of the clients that has had at least one deal.                                                                           |
-| total_verified_client_count             | STRING  | Cumulative count of the clients that has had at least one verified deal.  |
+| total_verified_client_count             | BIGINT  | Cumulative count of the clients that has had at least one verified deal.  |
 
 #### Response Example
 
@@ -314,10 +314,10 @@ curl --location --request GET 'https://api.spacescope.io/v2/network_user/address
 | active_address_count_weekly          | BIGINT  | The number of unique addresses that has interacted with the Filecoin blockchain at least once in the past 7 days.                         |
 | active_address_count_monthly          | BIGINT  | The number of unique addresses that has interacted with the Filecoin blockchain at least once in the past 30 days.       |
 | total_address_count_100           | BIGINT  | The number of unique addresses on Filecoin with token balance >100 FIL.                        |
-| total_address_count_1000         | BIGINT  | The number of unique addresses on Filecoin with token balance >1000 FIL.             |
-| total_address_count_10000 | BIGINT | The number of unique addresses on Filecoin with token balance >10000 FIL. |
-| total_address_count_100000 | BIGINT | The number of unique addresses on Filecoin with token balance >100000 FIL. |
-| total_address_count_1000000 | BIGINT | The number of unique addresses on Filecoin with token balance >1000000 FIL. |
+| total_address_count_1000         | BIGINT  | The number of unique addresses on Filecoin with token balance >1,000 FIL.             |
+| total_address_count_10000 | BIGINT | The number of unique addresses on Filecoin with token balance >10,000 FIL. |
+| total_address_count_100000 | BIGINT | The number of unique addresses on Filecoin with token balance >100,000 FIL. |
+| total_address_count_1000000 | BIGINT | The number of unique addresses on Filecoin with token balance >1,000,000 FIL. |
 
 #### Response Example
 
