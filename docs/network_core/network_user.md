@@ -10,7 +10,7 @@ Population information on the Filecoin Network’s various network users or part
 
 #### Description
 
-The number of clients on the Filecoin Network.
+The number of storage clients on the Filecoin Network.
 
 #### Request URL
 
@@ -146,8 +146,8 @@ curl --location --request GET 'https://api.spacescope.io/v2/network_user/client_
 | **Variable**                   | **Type** | **Description**                                                                                                                                    |
 | ------------------------------ | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | stat_date           | DATE  | Refers to the date the data was recorded.  |
-| total_client_count          | BIGINT  | Cumulative count of the clients that has had at least one deal.                                                                           |
-| total_verified_client_count             | BIGINT  | Cumulative count of the clients that has had at least one verified deal.  |
+| total_client_count          | BIGINT  | Cumulative count of the storage clients that has had at least one deal.                                                                           |
+| total_verified_client_count             | BIGINT  | Cumulative count of the storage clients that has had at least one verified deal.  |
 
 #### Response Example
 
@@ -311,13 +311,14 @@ curl --location --request GET 'https://api.spacescope.io/v2/network_user/address
 | :-------------------------- | :------- | :----------------------------------------------------- |
 | stat_date                   | DATE     | Refers to the date the data was recorded. |
 | total_address_count        | BIGINT  | The number of unique addresses ever created on Filecoin.                       |
+| active_address_count_daily          | BIGINT  | The number of unique addresses that has interacted with the Filecoin blockchain at least once in the past 24 hours.                      |
 | active_address_count_weekly          | BIGINT  | The number of unique addresses that has interacted with the Filecoin blockchain at least once in the past 7 days.                         |
 | active_address_count_monthly          | BIGINT  | The number of unique addresses that has interacted with the Filecoin blockchain at least once in the past 30 days.       |
 | total_address_count_100           | BIGINT  | The number of unique addresses on Filecoin with token balance >100 FIL.                        |
-| total_address_count_1000         | BIGINT  | The number of unique addresses on Filecoin with token balance >1,000 FIL.             |
-| total_address_count_10000 | BIGINT | The number of unique addresses on Filecoin with token balance >10,000 FIL. |
-| total_address_count_100000 | BIGINT | The number of unique addresses on Filecoin with token balance >100,000 FIL. |
-| total_address_count_1000000 | BIGINT | The number of unique addresses on Filecoin with token balance >1,000,000 FIL. |
+| total_address_count_1000         | BIGINT  | The number of unique addresses on Filecoin with token balance >1,000 FIL (including addresses with token balance >100 FIL).             |
+| total_address_count_10000 | BIGINT | The number of unique addresses on Filecoin with token balance >10,000 FIL (including addresses with token balance >1,000 FIL). |
+| total_address_count_100000 | BIGINT | The number of unique addresses on Filecoin with token balance >100,000 FIL (including addresses with token balance >10,000 FIL). |
+| total_address_count_1000000 | BIGINT | The number of unique addresses on Filecoin with token balance >1,000,000 FIL (including addresses with token balance >100,000 FIL). |
 
 #### Response Example
 
@@ -338,6 +339,7 @@ curl --location --request GET 'https://api.spacescope.io/v2/network_user/address
            "total_address_count_10000": 4539,
            "total_address_count_100000": 815,
            "total_address_count_1000000": 52,
+           "active_address_count_daily": 8380,
            "active_address_count_weekly": 20952,
            "active_address_count_monthly": 56088
        }
