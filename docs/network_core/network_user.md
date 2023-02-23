@@ -60,7 +60,7 @@ url = "https://api.spacescope.io/v2/network_user/client_count?end_date=2022-07-0
 
 payload={}
 headers = {
-  'authorization': 'Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe'
+  'authorization': 'Bearer <--Please replace your API key here-->'
 }
 
 response = requests.request("GET", url, headers=headers, data=payload)
@@ -90,7 +90,7 @@ func main() {
     fmt.Println(err)
     return
   }
-  req.Header.Add("authorization", "Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe")
+  req.Header.Add("authorization", "Bearer <--Please replace your API key here-->")
   res, err := client.Do(req)
   if err != nil {
     fmt.Println(err)
@@ -117,7 +117,7 @@ var options = {
   'method': 'GET',
   'url': 'https://api.spacescope.io/v2/network_user/client_count?end_date=2022-07-01&start_date=2022-07-01',
   'headers': {
-    'authorization': 'Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe'
+    'authorization': 'Bearer <--Please replace your API key here-->'
   }
 };
 request(options, function (error, response) {
@@ -131,7 +131,7 @@ request(options, function (error, response) {
 
 ```curl
 curl --location --request GET 'https://api.spacescope.io/v2/network_user/client_count?end_date=2022-07-01&start_date=2022-07-01' \
---header 'authorization: Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe'
+--header 'authorization: Bearer <--Please replace your API key here-->'
 ```
 
 </TabItem>
@@ -224,7 +224,7 @@ url = "https://api.spacescope.io/v2/network_user/address_count?end_date=2022-07-
 
 payload={}
 headers = {
-  'authorization': 'Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe'
+  'authorization': 'Bearer <--Please replace your API key here-->'
 }
 
 response = requests.request("GET", url, headers=headers, data=payload)
@@ -254,7 +254,7 @@ func main() {
     fmt.Println(err)
     return
   }
-  req.Header.Add("authorization", "Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe")
+  req.Header.Add("authorization", "Bearer <--Please replace your API key here-->")
   res, err := client.Do(req)
   if err != nil {
     fmt.Println(err)
@@ -281,7 +281,7 @@ var options = {
   'method': 'GET',
   'url': 'https://api.spacescope.io/v2/network_user/address_count?end_date=2022-07-01&start_date=2022-07-01',
   'headers': {
-    'authorization': 'Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe'
+    'authorization': 'Bearer <--Please replace your API key here-->'
   }
 };
 request(options, function (error, response) {
@@ -295,7 +295,7 @@ request(options, function (error, response) {
 
 ```curl
 curl --location --request GET 'https://api.spacescope.io/v2/network_user/address_count?end_date=2022-07-01&start_date=2022-07-01' \
---header 'authorization: Bearer ghp_xJtTSVcNRJINLWMmfDangcIFCjqPUNZenoVe'
+--header 'authorization: Bearer <--Please replace your API key here-->'
 ```
 
 </TabItem>
