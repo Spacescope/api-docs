@@ -6,9 +6,9 @@ sidebar_position: 2
 
 ## Authentication
 
-All HTTP requests made against the Spacescope API must be validated with an API Token. 
+All HTTP requests made against the Spacescope API must be validated with an API key.
 
-You can register and activate a token at [Spacescope](https://spacescope.io/) !
+Please [sign in](https://spacescope.io/sign/in) to view your API key. Don't have an account? [Register](https://spacescope.io/sign/up/email) now to activate your API key for free! 
 
 
 ## Quick Start
