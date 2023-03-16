@@ -11,7 +11,7 @@ slug: /
 
 ## Endpoint Overview
 
-The endpoints provisioned in the Spacescope Filecoin Data API are divided into several categories: **`Power`**, **`Economics`**, **`Deals`**, **`Gas`**, **`Circulating Supply`**, **`Network User`** and **`Storage Provider`**.
+The endpoints provisioned in the Spacescope Filecoin Data API are divided into several categories: **`Power`**, **`Economics`**, **`Deals`**, **`Gas`**, **`Circulating Supply`**, **`Network User`**, **`Storage Provider`**, and **`FVM`**.
 
 | **Endpoint Category**                    | **Description**                                                                                                                                                                                         |
 | :--------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -22,3 +22,4 @@ The endpoints provisioned in the Spacescope Filecoin Data API are divided into s
 | /v2/circulating_supply/* | Endpoints that return data of token circulating supply on the Filecoin Network.                                                        |
 | /v2/network_user/* | Endpoints that return data of population information on the Filecoin Network’s various network users or participants.                                                        |
 | /v2/storage_provider/* | Endpoints that return data on the storage providers (also known as miners) in Filecoin Network, including rewards, balance, power, deals, gas, sectors, etc. |
+| /v2/fvm/* | Endpoints that return data on Filecoin Virtual Machine smart contracts, including contracts, total value locked, gas usage, etc. |
