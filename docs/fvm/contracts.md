@@ -4,8 +4,8 @@ sidebar_position: 6
 
 # Contracts
 
-Contracts provides information on contract deployment on Filecoin Virtual Machine, including daily
-statistics on number of contracts, number of contract interactions, total value locked and gas usage.
+Contracts provides information on contract deployment statistics on Filecoin Virtual Machine, including 
+counts of contracts, users and transactions.
 
 ### Contracts Deployed
 
