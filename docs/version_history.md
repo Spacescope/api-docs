@@ -4,6 +4,13 @@ sidebar_position: 3
 
 # Version History
 
+## V2.4.0 on March 16, 2023
+- [/v2/fvm/contracts_deployed](https://docs.spacescope.io/fvm/contracts#contracts-deployed) now available.  
+- [/v2/fvm/contract_interactions](https://docs.spacescope.io/fvm/contracts#contract-interactions) now available.  
+- [/v2/fvm/active_contract_users](https://docs.spacescope.io/fvm/contracts#active-contract-users) now available.  
+- [/v2/fvm/total_value_locked](https://docs.spacescope.io/fvm/economics#total-value-locked) now available.  
+- [/v2/fvm/gas_usage](https://docs.spacescope.io/fvm/gas#gas_usage) now available.  
+
 ## V2.3.0 on December 19, 2022
 - [/network_user/client_count](https://docs.spacescope.io/network_core/network_user#client-count) now available.  
 - [/network_user/address_count](https://docs.spacescope.io/network_core/network_user#address-count) now available.

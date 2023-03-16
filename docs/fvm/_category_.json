@@ -1,0 +1,8 @@
+{
+  "label": "FVM",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "FVM provides an overview of Filecoin Virtual Machine smart contract deployment and interactions over time."
+  }
+}
