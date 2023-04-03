@@ -17,7 +17,6 @@ The total value locked of all FEVM contracts, denominated in FIL.
 
 ```js
 GET: /v2/fvm/total_value_locked
-
 ```
 
 #### Request Parameters

@@ -185,7 +185,6 @@ The daily number of contract interactions across all contracts in FEVM.
 
 ```js
 GET: /v2/fvm/contract_interactions
-
 ```
 
 #### Request Parameters
@@ -353,7 +352,6 @@ The daily number of unique active contract users in the FEVM.
 
 ```js
 GET: /v2/fvm/active_contract_users
-
 ```
 
 #### Request Parameters
