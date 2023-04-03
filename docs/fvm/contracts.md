@@ -148,6 +148,7 @@ curl --location --request GET 'https://api.spacescope.io/v2/fvm/contracts_deploy
 | stat_date                | DATE     | Date, in YYYY-MM-DD.                                                         |
 | new_contract_count_daily | BIGINT   | Number of new unique contracts recorded on chain each day.                   |
 | total_contract_count     | BIGINT   | The cumulative number of new unique contracts recorded on chain on each day. |
+| total_deployer_address_count | BIGINT | The cumulative number of unique deployer addresses as of specified day.    | 
 
 #### Response Example
 
