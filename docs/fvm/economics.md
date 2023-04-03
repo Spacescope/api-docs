@@ -145,8 +145,8 @@ curl --location --request GET 'https://api.spacescope.io/v2/fvm/total_value_lock
 |----------------------|----------|------------------------------------------------------------------------------|
 | stat_date            | DATE     | Date, in YYYY-MM-DD.                                                         |
 | total_value_locked   | BIGINT   | The total value locked by all FEVM contracts per day, denominated in FIL. In this context, total value locked refers to the sum of the balances of all contracts.   |
-| total_value_received | BIGINT   | The total value received across FEVM contracts each day, denominated in FIL. |
-| total_value_sent     | BIGINT   | The total value sent across all FEVM contracts each day, denominated in FIL. |
+<!-- | total_value_received | BIGINT   | The total value received across FEVM contracts each day, denominated in FIL. |
+| total_value_sent     | BIGINT   | The total value sent across all FEVM contracts each day, denominated in FIL. | -->
 
 #### Response Example
 
