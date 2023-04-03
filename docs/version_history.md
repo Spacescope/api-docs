@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Version History
 
-## V2.4.0 on March 16, 2023
+## V2.4.0 on April 4, 2023
 - [/v2/fvm/contracts_deployed](https://docs.spacescope.io/fvm/contracts#contracts-deployed) now available.  
 - [/v2/fvm/contract_interactions](https://docs.spacescope.io/fvm/contracts#contract-interactions) now available.  
 - [/v2/fvm/active_contract_users](https://docs.spacescope.io/fvm/contracts#active-contract-users) now available.  
